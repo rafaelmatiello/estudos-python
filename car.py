@@ -1,5 +1,7 @@
 
 class Car:
+
+    x = 'ABC'
     def __init__(self):
         self.make = 'vw'
         self.name = 'gol'
@@ -12,3 +14,8 @@ class Car:
     @staticmethod
     def hello():
         print("hello world")
+
+
+    @classmethod
+    def show(cls):
+        print(cls.x)
